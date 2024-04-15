@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>숫자 입력 폼</title>
+</head>
+<body>
+    <form method="post" action="{% url 'calculate' %}">    
+        <label for="number1">첫 번째 숫자:</label>
+        <input type="number" id="number1" name="number1">
+        <br>
+        <label for="number2">두 번째 숫자:</label>
+        <input type="number" id="number2" name="number2">
+        <br>       
+        <button type="button" onclick = "location.href='http://127.0.0.1:8000/result/';"> 결과 </button>
+    </form>
+</body>
+</html>
