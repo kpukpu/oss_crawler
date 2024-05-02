@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Result</title>
+</head>
+<body>
+    <p>결과 : {{ news_content }}</p>
+    <form action="/calculate/summarize/" method="POST">
+        {% csrf_token %}
+        <p><input type="submit" value="기사 요약"></p>
+    </form>
+    <form action="/calculate/wordcloud/" method="POST">
+        {% csrf_token %}
+        <p><input type="submit" value="워드클라우드"></p>
+    </form>
+</body>
+</html>
